@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.main-cont {
+	background-color: #e5e5e5;
+	font-family: 'Roboto', sans-serif;
+	/* height: 100vh; */
+}
+.container {
+	margin: 10px;
+	border: 1.5px solid #e7e6eb;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	background-color: white;
+}
+.nav-cont {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2%;
+}
+
+.nav-cont h6 {
+	color: white;
+	font-size: 1rem;
+	background-color: rgb(241, 135, 13);
+	padding: 0.5rem 1.5rem;
+	border-bottom-right-radius: 25px;
+}
+.nav-cont .logo-img {
+	width: 40%;
+	height: 85%;
+	object-fit: cover;
+}
+.nav-cont .nav-child {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding-right: 10px;
+	font-size: 35px;
+}
+.img-cont {
+	height: 250px;
+	width: 100%;
+	object-fit: contain;
+}
+.desc {
+	padding: 3px 25px 10px;
+}
+h2 {
+	font-weight: 600;
+	text-align: left;
+	font-size: 1.5em;
+	line-height: 2rem;
+}
+.cost {
+	padding: 10px 0px;
+}
+.old-cost {
+	font-size: 1.2em;
+	text-decoration: line-through;
+	color: #c5c4c9;
+}
+.new-cost {
+	font-size: 1.8em;
+	color: black;
+	font-weight: 800;
+}
+.rating {
+	color: rgb(80, 73, 73);
+	font-size: 1em;
+	display: flex;
+	align-items: center;
+}
+.rat-scr {
+	color: #ff0000;
+	padding: 0px 5px;
+	font-weight: 700;
+}
+.button-cont {
+	border-top: 2px solid rgb(212, 205, 205);
+	border-bottom: 2px solid rgb(212, 205, 205);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+	gap: 10px;
+	padding: 15px 0px;
+	margin-top: 3%;
+}
+button {
+	padding: 10px 10px;
+	border: 2px solid rgb(163, 159, 159);
+	border-radius: 5px;
+	font-size: 0.7rem;
+	color: rgb(80, 73, 73);
+	background-color: transparent;
+}
+button:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+#buy-bttn {
+	background-color: orangered;
+	border: none;
+	color: white;
+}
+ul {
+	padding: 25px;
+	line-height: 1.8rem;
+	color: rgb(80, 73, 73);
+	border-bottom: 2px solid rgb(212, 205, 205);
+}
+
+.delivery {
+	color: rgb(80, 73, 73);
+	line-height: 1.5rem;
+	font-size: 0.8rem;
+}
+#del-day {
+	color: black;
+	font-size: 1rem;
+	font-weight: 700;
+}
+#buy-bttn {
+	width: 100%;
+	font-size: 2rem;
+	text-align: center;
+}
+#btn-desc {
+	padding-left: 10px;
+	font-size: 1.5rem;
+}
+.filter {
+	display: flex;
+	justify-content: space-evenly;
+}
+.filter p {
+	padding: 10px;
+	color: black;
+	font-size: 1rem;
+	font-weight: 700;
+}
