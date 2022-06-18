@@ -8,7 +8,6 @@
 .main-cont {
 	background-color: #e5e5e5;
 	font-family: 'Roboto', sans-serif;
-	/* height: 100vh; */
 }
 .container {
 	margin: 10px;
@@ -21,7 +20,7 @@
 .nav-cont {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 2%;
+	margin: -0.1% 0 2% -0.1%;
 }
 
 .nav-cont h6 {
@@ -143,4 +142,8 @@ ul {
 	color: black;
 	font-size: 1rem;
 	font-weight: 700;
+}
+.filter i {
+	font-weight: 700;
+	font-size: 1.3rem;
 }
