@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
 	margin: 0;
-	border: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -12,10 +11,9 @@
 .container {
 	margin: 10px;
 	border: 1.5px solid #e7e6eb;
-	display: flex;
-	flex-direction: column;
 	border-radius: 8px;
 	background-color: white;
+	/* overflow-x: hidden; */
 }
 .nav-cont {
 	display: flex;
@@ -43,9 +41,40 @@
 	font-size: 35px;
 }
 .img-cont {
-	height: 250px;
 	width: 100%;
 	object-fit: contain;
+}
+hr {
+	margin: 1em 0;
+}
+.display-area {
+	width: 450px;
+	overflow-x: hidden;
+	margin: 0 auto;
+}
+.slider-wrapper {
+	display: flex;
+	transition: ease 0.5s;
+}
+.dots-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.dots-wrapper button {
+	border: none;
+	background: rgba(0, 0, 0, 0.2);
+	width: 10px;
+	height: 10px;
+	outline: none;
+	border-radius: 50%;
+	margin: 5px;
+}
+.dot:hover {
+	background: rgba(0, 0, 0, 0.3);
+}
+.dot.active {
+	background: rgba(219, 140, 20, 0.829);
 }
 .desc {
 	padding: 3px 25px 10px;
@@ -58,17 +87,19 @@ h2 {
 }
 .cost {
 	padding: 10px 0px;
-}
-.old-cost {
 	font-size: 1.2em;
-	text-decoration: line-through;
 	color: #c5c4c9;
 }
+.cost span:first-child {
+	text-decoration: line-through;
+}
 .new-cost {
+	text-decoration: none;
 	font-size: 1.8em;
 	color: black;
 	font-weight: 800;
 }
+
 .rating {
 	color: rgb(80, 73, 73);
 	font-size: 1em;
@@ -81,15 +112,12 @@ h2 {
 	font-weight: 700;
 }
 .button-cont {
-	border-top: 2px solid rgb(212, 205, 205);
-	border-bottom: 2px solid rgb(212, 205, 205);
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 	gap: 10px;
-	padding: 15px 0px;
-	margin-top: 3%;
+	padding-bottom: 0.2rem;
 }
-button {
+.button-cont button {
 	padding: 10px 10px;
 	border: 2px solid rgb(163, 159, 159);
 	border-radius: 5px;
@@ -111,9 +139,11 @@ ul {
 	padding: 25px;
 	line-height: 1.8rem;
 	color: rgb(80, 73, 73);
-	border-bottom: 2px solid rgb(212, 205, 205);
 }
-
+.wrapper {
+	display: block;
+	margin: 0 auto;
+}
 .delivery {
 	color: rgb(80, 73, 73);
 	line-height: 1.5rem;
@@ -146,4 +176,25 @@ ul {
 .filter i {
 	font-weight: 700;
 	font-size: 1.3rem;
+}
+@media (min-width: 280px) and (max-width: 395px) {
+	.display-area {
+		width: 250px;
+	}
+	ul {
+		line-height: 1.3rem;
+		font-size: 0.9rem;
+	}
+}
+@media (min-width: 400px) and (max-width: 470px) {
+	.display-area {
+		width: 380px;
+	}
+}
+@media (width: 768px) {
+	.button-cont {
+		grid-template-columns: repeat(auto-fit, minmax(450px, 700px));
+		grid-template-rows: 1fr;
+		padding: 15px 10px;
+	}
 }

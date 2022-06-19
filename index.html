@@ -10,6 +10,7 @@
 			rel="stylesheet"
 			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
 		/>
+		<script src="script.js" defer></script>
 	</head>
 	<body class="main-cont">
 		<div class="container">
@@ -20,14 +21,31 @@
 					<i class="uil uil-heart-alt"></i>
 				</div>
 			</nav>
-			<img class="img-cont" src="images/main.jpg" alt="m" />
+			<div class="display-area">
+				<div class="slider-wrapper">
+					<img class="img-cont" src="images/n1.png" alt="TV" />
+					<img class="img-cont" src="images/f1.jpg" alt="TV" />
+					<img class="img-cont" src="images/f2.jpg" alt="TV" />
+					<img class="img-cont" src="images/f4.jpg" alt="TV" />
+					<img class="img-cont" src="images/f5.jpg" alt="TV" />
+				</div>
+			</div>
+
+			<div class="dots-wrapper">
+				<button class="dot active"></button>
+				<button class="dot"></button>
+				<button class="dot"></button>
+				<button class="dot"></button>
+				<button class="dot"></button>
+			</div>
+
 			<section class="desc">
 				<h2>
 					Sony - 65" Class BRAVIA XR A80J Series OLED 4K UHD Smart Google TV
 				</h2>
 				<p class="cost">
-					<span class="old-cost">SAR1,999.00</span
-					><span class="new-cost"> SAR1,699.00</span>
+					<span>SAR1,999.00</span>
+					<span class="new-cost"> SAR1,699.00</span>
 				</p>
 				<p class="rating">
 					<svg
@@ -45,18 +63,20 @@
 					</svg>
 					<span class="rat-scr">4.2/5</span>2183 Ratings
 				</p>
+				<hr />
 				<div class="button-cont">
 					<button>43 Inches</button>
 					<button>50 Inches</button>
 					<button>55 Inches</button>
 					<button>65 Inches</button>
 				</div>
-
-				<ul class="features">
+				<hr />
+				<ul>
 					<li>Netflix|Prime Video|Disney + Hotstar|Youtube</li>
 					<li>Multi-position stand for Versatile TV placement</li>
 					<li>HD Smart 2048 * 1366 Pixels</li>
 				</ul>
+				<hr />
 				<p class="delivery">
 					Free Delivery by
 					<span id="del-day"
